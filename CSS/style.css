@@ -48,7 +48,7 @@ nav li .nav-link {
 /* -------------------------------------------- ESTILOS DEL MAIN ------------------------------ */
 .div__texto-principal {
   margin-top: 10px;
-  background-image: linear-gradient(90deg, rgba(2, 1, 28, 0.6) 0%, rgba(17, 16, 16, 0.6) 16%, rgba(17, 67, 78, 0.6) 100%), url(/Imagenes/imagen-principal2.jpg);
+  background-image: linear-gradient(90deg, rgba(2, 1, 28, 0.6) 0%, rgba(17, 16, 16, 0.6) 16%, rgba(17, 67, 78, 0.6) 100%), url(../Imagenes/imagen-principal2.jpg);
 }
 .div__texto-principal h1 {
   color: white;
