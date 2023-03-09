@@ -1,0 +1,46 @@
+.div__titulo-sofas {
+  padding-top: 106px;
+}
+
+.titulo-sofas {
+  background: $gradiend-segundario;
+  padding: 10px;
+  font-size: 40px;
+  font-weight: 10px;
+  letter-spacing: 10px;
+  animation: titulo-pages 1s linear 0s 1 normal none;
+}
+
+.card {
+  background: $gradiend-segundario;
+
+  .imagen__card-section {
+    width: 89%;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 30px;
+    filter: drop-shadow(11px 14px 10px rgb(250, 251, 252, 0.2));
+  }
+
+  .card-img-top {
+    filter: drop-shadow(11px 14px 10px rgb(250, 251, 252, 0.2));
+    animation: animatio-img-sillones 1.2s linear 0s 1 normal none;
+  }
+
+  .card-body {
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    background: $gradient-cards;
+
+    .card-title {
+      font-size: 30px;
+      font-family: monospace;
+      text-align: center;
+    }
+
+    .card-text {
+      font-size: 20px;
+    }
+  }
+}

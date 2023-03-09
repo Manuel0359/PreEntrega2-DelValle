@@ -1,0 +1,20 @@
+$color-principal: rgb(233, 175, 204);
+$gradient-principal: radial-gradient(
+  circle,
+  rgba(233, 175, 204, 1) 14%,
+  rgba(238, 174, 202, 1) 41%,
+  rgba(205, 141, 210, 1) 100%
+);
+
+$gradiend-segundario: linear-gradient(
+  90deg,
+  rgba(2, 1, 28, 0.6) 0%,
+  rgba(17, 16, 16, 0.6) 16%,
+  rgba(17, 67, 78, 0.6) 100%
+);
+
+$gradient-cards: linear-gradient(
+  160deg,
+  rgba(145, 118, 130, 0.9416141456582633) 0%,
+  rgba(227, 230, 211, 0.06206232492997199) 100%
+);

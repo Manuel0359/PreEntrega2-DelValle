@@ -1,0 +1,40 @@
+.titulo-contacto {
+  font-size: 3em;
+}
+
+.apellido {
+  color: red;
+}
+
+.form-contenido {
+  box-shadow: 0 0 20px 0 rgba(255, 253, 253, 0.5);
+  background: rgba(221, 236, 241, 0.658);
+  form {
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+  }
+}
+
+.form-contenido form,
+.form-contenido input,
+.form-contenido textarea,
+.form-contenido button {
+  width: 100%;
+  padding: 0.7em;
+  border: none;
+  background: none;
+  outline: 0;
+  border-bottom: 1px solid rgba(12, 11, 11, 0.651);
+}
+
+.form-contenido form button {
+  background: $gradiend-segundario;
+  border: 0;
+  padding: 1em;
+}
+
+.form-contenido form .block {
+  grid-column: 1 / 3;
+}

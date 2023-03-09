@@ -1,0 +1,87 @@
+/* ANIMACIONES */
+@keyframes animation-carousel {
+  0% {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* ----------------------------------- ANIMACION LOGO PRINCIPAL -------------------------------- */
+
+@keyframes animation__logo-principal {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-100px);
+  }
+}
+
+/* ----------------------------------- ANIMACION FOOTER  ---------------------------------------- */
+
+@keyframes animation__logo-footer {
+  0% {
+    transform: scale(0);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* ----------------------------------- ANIMACION TITULOS DE PAGES   ---------------------------------------- */
+
+@keyframes titulo-pages {
+  0% {
+    letter-spacing: 1em;
+    filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    filter: blur(0);
+    opacity: 1;
+  }
+}
+
+/* -------------------------- ANIMACIONES PARA LAS IMAGENES DE PAGE SOFAS Y ESQINEROS   ------------------- */
+@keyframes animatio-img-sillones {
+  0% {
+    transform: scale(7);
+    animation-timing-function: ease-in;
+    opacity: 0;
+  }
+  35% {
+    transform: scale(1);
+    animation-timing-function: ease-out;
+    opacity: 1;
+  }
+  55% {
+    transform: scale(1.5);
+    animation-timing-function: ease-in;
+  }
+  70% {
+    transform: scale(1);
+    animation-timing-function: ease-out;
+  }
+  80% {
+    transform: scale(1.24);
+    animation-timing-function: ease-in;
+  }
+  90% {
+    transform: scale(1);
+    animation-timing-function: ease-out;
+  }
+  95% {
+    transform: scale(1.04);
+    animation-timing-function: ease-in;
+  }
+  100% {
+    transform: scale(1);
+    animation-timing-function: ease-out;
+  }
+}

@@ -4,7 +4,17 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Inicio</title>
+    <meta
+      name="description"
+      content="Compra tu sillon o sofa desde tu casa|Sillones fabricados a medida|Sillones cómodos y duraderos|Fabricación artesanal de sillones"
+    />
+    <meta
+      name="keywords"
+      content="Sillones, Muebles de sala, Sofas, Sillones de cuero, Diseño de interiores,Fabricante de muebles"
+    />
+    <title>
+      Fabrica de Sillones | Sillónes a medida | Diseño de interiores
+    </title>
     <!-- Bootstrap -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
@@ -32,9 +42,9 @@
   <body>
     <!-- AQUI COMIENZA EL HEADER -->
     <header>
-      <nav class="navbar navbar-expand-lg bg-with">
+      <nav class="navbar navbar-expand-lg bg-with fixed-top">
         <div class="container">
-          <a class="navbar-brand" href="#">
+          <a class="navbar-brand" href="index.html">
             <img
               class="logo-principal__header"
               src="Imagenes/Logos/Icon Png.png"
@@ -54,29 +64,24 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#"
-                  >INICIO</a
-                >
+                <a class="nav-link" aria-current="page" href="#">INICIO</a>
               </li>
               <li class="nav-item">
                 <a
-                  class="nav-link active"
+                  class="nav-link"
                   aria-current="page"
                   href="pages/nosotros.html"
                   >NOSOTROS</a
                 >
               </li>
               <li class="nav-item">
-                <a
-                  class="nav-link active"
-                  aria-current="page"
-                  href="pages/sofas.html"
+                <a class="nav-link" aria-current="page" href="pages/sofas.html"
                   >SOFAS</a
                 >
               </li>
               <li class="nav-item">
                 <a
-                  class="nav-link active"
+                  class="nav-link"
                   aria-current="page"
                   href="pages/esquineros.html"
                   >ESQUINEROS</a
@@ -84,7 +89,7 @@
               </li>
               <li class="nav-item">
                 <a
-                  class="nav-link active"
+                  class="nav-link"
                   aria-current="page"
                   href="pages/contacto.html"
                   >CONTACTO</a
@@ -95,17 +100,101 @@
         </div>
       </nav>
     </header>
+
     <!-- AQUI COMIENZA EL MAIN -->
+
     <main>
+      <!-- AQUI COMIENZA EL CAROUSEL  -->
+
+      <section class="carousel">
+        <div id="carouselExampleCaptions" class="carousel slide">
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                src="Imagenes/carousel-3.jpg"
+                class="d-block w-100"
+                alt="esto-es-un-sillon"
+              />
+              <div
+                class="div__carousel-text carousel-caption d-none d-md-block"
+              >
+                <h5>SOMOS FABRICANTES</h5>
+                <p>Dale un estilo Unico a tu Hogar.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img
+                src="Imagenes/Carrousel-5.jpg"
+                class="d-block w-100"
+                alt="esto-es-un-sillon"
+              />
+              <div
+                class="div__carousel-text carousel-caption d-none d-md-block"
+              >
+                <h5>ENVIOS A TODO EL PAIS</h5>
+                <p>Compra desde la comodidad de tu hogar.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img
+                src="Imagenes/Carrousel-6.jpg"
+                class="d-block w-100"
+                alt="esto-es-un-sillon"
+              />
+              <div
+                class="div__carousel-text carousel-caption d-none d-md-block"
+              >
+                <h5>GRAN VARIEDAD DE COLORES Y TELAS</h5>
+                <p>Elegi el tipo y color de tela que mas se adapte a vos.</p>
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </section>
+      <!-- FIN DEL CAROUSEL -->
+
       <section>
         <div class="container-fluid">
-          <div class="div__imagen-principal" class="row">
-            <img
-              class="col-md-12 imagen-principal"
-              src="Imagenes/imagen-principal2.jpg"
-              alt="sillon"
-            />
-          </div>
           <div class="div__texto-principal text-center Bold text">
             <h1 class="texto-principal">
               SOMOS UNA FABRICA DE SILLONES Y SOFÁS CON MAS DE 10 AÑOS DE
@@ -116,8 +205,8 @@
       </section>
 
       <section class="section-info">
-        <div class="container bg-with">
-          <h2 class="titulo__section-info text-center">
+        <div class="container">
+          <h2 class="titulo__section-info text-center fw-bold text-white">
             SOFAS Y SILLONES A MEDIDA
           </h2>
           <div class="somos-fabricantes">
@@ -134,7 +223,9 @@
               alt="imagen-sillon"
             />
           </div>
-          <h2 class="titulo__section-info text-center">COMO TRABAJAMOS</h2>
+          <h2 class="titulo__section-info text-center fw-bold text-white">
+            COMO TRABAJAMOS
+          </h2>
           <div class="nuestro-trabajo">
             <p class="texto__section-info text-center">
               Un sofá no solo viste tu hogar, sino que lo engalana, Diseño
@@ -150,7 +241,9 @@
               alt="personatrabajando"
             />
           </div>
-          <h2 class="titulo__section-info text-center">ENVIOS</h2>
+          <h2 class="titulo__section-info text-center fw-bold text-white">
+            ENVIOS
+          </h2>
           <div class="somos-fabricantes">
             <p class="texto__section-info text-center">
               En Diseño Deluxe queremos que tu experiencia con nosotros sea
@@ -164,7 +257,7 @@
             <img
               class="imagen__section-info"
               src="Imagenes/gato-negro.jpg"
-              alt=""
+              alt="imagen-de-gato-en-un-sillon"
             />
           </div>
         </div>
@@ -172,7 +265,7 @@
     </main>
 
     <!-- ACA COMIENZA EL FOOTER -->
-    <footer class="footer bg-success bg-gradient mt-10">
+    <footer class="footer mt-10">
       <div class="div__logo-footer text-center">
         <a href="index.html">
           <img
@@ -223,6 +316,7 @@
         Diseño Deluxe 2023 © DesarolloWeb Blacklilo
       </h3>
     </footer>
+
     <!--bootstrap script -->
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"

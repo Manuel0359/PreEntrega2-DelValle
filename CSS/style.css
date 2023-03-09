@@ -3,80 +3,169 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 body {
   font-family: "Open Sans", sans-serif;
   font-family: "Roboto", sans-serif;
+  background: rgb(233, 175, 204);
+  background: radial-gradient(circle, rgb(233, 175, 204) 14%, rgb(238, 174, 202) 41%, rgb(205, 141, 210) 100%);
 }
 
-.logo-principal__header {
+/*--------------------------------------------- ESTILOS DE LA NAV ----------------------------------*/
+nav {
+  background: rgb(233, 175, 204);
+  background: radial-gradient(circle, rgb(233, 175, 204) 14%, rgb(238, 174, 202) 41%, rgb(205, 141, 210) 100%);
+}
+nav .logo-principal__header {
   width: 80px;
+  animation: animation__logo-principal 2s ease-out 1s 2 normal none;
+}
+nav li {
+  font-size: large;
+}
+nav li .nav-link {
+  color: white;
+  letter-spacing: 5px;
 }
 
+/* --------------------------------------------- ESTILOS PARA EL CAROUSEL ------------------------------*/
+.div__carousel-text {
+  animation: animation-carousel 2s ease 0s 1 normal none;
+}
+.div__carousel-text h5 {
+  font-size: 40px;
+  color: rgb(17, 17, 17);
+  letter-spacing: 5px;
+}
+.div__carousel-text p {
+  color: black;
+  font-size: 25px;
+}
+.div__carousel-text:hover {
+  background: rgba(253, 251, 251, 0.75);
+}
+
+/* -------------------------------------------- ESTILOS DEL MAIN ------------------------------ */
 .div__texto-principal {
-  background: lightcoral;
   margin-top: 10px;
+  background-image: linear-gradient(90deg, rgba(2, 1, 28, 0.6) 0%, rgba(17, 16, 16, 0.6) 16%, rgba(17, 67, 78, 0.6) 100%), url(/Imagenes/imagen-principal2.jpg);
+}
+.div__texto-principal h1 {
+  color: white;
+  text-shadow: 4px 4px 2px rgba(8, 8, 8, 0.6);
+}
+
+.section-info {
+  background: rgb(145, 118, 130);
+  background: linear-gradient(160deg, rgb(145, 118, 130) 0%, rgb(224, 211, 230) 100%);
+}
+.section-info .section-info h2 {
+  color: white;
 }
 
 .imagen__section-info {
   margin: 20px 0 20px 0;
 }
-/* --------------------------------------------------ESTILOS DEL FOOTER--------------------------------------- */
-.footer__logos-redes-iconos {
+
+.footer {
+  margin-top: 20px;
+  background: rgb(145, 118, 130);
+  background: linear-gradient(160deg, rgba(145, 118, 130, 0.9416141457) 0%, rgb(227, 230, 211) 100%);
+}
+.footer .logo-footer {
+  margin: 20px 20px;
+}
+.footer .footer__logos-redes:hover {
+  animation: animation__logo-footer 1s ease-out 1s 2 normal none;
+}
+.footer .footer__logos-redes-iconos {
   text-decoration: none;
   padding: 5px;
 }
-.logo-footer {
-  margin: 20px 20px;
-}
-
-.copyright__texto {
+.footer .copyright__texto {
   margin-top: 30px;
   font-size: 15px;
   font-weight: 10px;
   letter-spacing: 5px;
 }
-/* --------------------------------------------------ESTILOS DEL NOSOTROS--------------------------------------- */
+
+.div__titulo-principal-sn {
+  margin-top: 106px;
+}
+
 .titulo-nosotros {
-  background: lightcoral;
+  background: linear-gradient(90deg, rgba(2, 1, 28, 0.6) 0%, rgba(17, 16, 16, 0.6) 16%, rgba(17, 67, 78, 0.6) 100%);
   padding: 10px;
   font-size: 30px;
   font-weight: 10px;
   letter-spacing: 10px;
-}
-.imagen-p-ns {
-  width: 100%;
+  animation: titulo-pages 1s linear 0s 1 normal none;
 }
 
-/* --------------------------------------------------ESTILOS DEL SOFAS--------------------------------------- */
-.imagen__card-section {
-  width: 89%;
-}
-
-.card-title {
-  font-size: 20px;
-  color: aliceblue;
-  font-family: monospace;
-}
-
-/* ------------------------------------------------ESTILOS NOSOTROS -----------------------------------------*/
 .texto-principal-ns {
   margin: 15px;
 }
 
-/* ------------------------------------------------ESTILOS CONTACTANOS -----------------------------------------*/
+.imagen-p-ns {
+  width: 100%;
+}
+
+.div__titulo-sofas {
+  padding-top: 106px;
+}
+
+.titulo-sofas {
+  background: linear-gradient(90deg, rgba(2, 1, 28, 0.6) 0%, rgba(17, 16, 16, 0.6) 16%, rgba(17, 67, 78, 0.6) 100%);
+  padding: 10px;
+  font-size: 40px;
+  font-weight: 10px;
+  letter-spacing: 10px;
+  animation: titulo-pages 1s linear 0s 1 normal none;
+}
+
+.card {
+  background: linear-gradient(90deg, rgba(2, 1, 28, 0.6) 0%, rgba(17, 16, 16, 0.6) 16%, rgba(17, 67, 78, 0.6) 100%);
+}
+.card .imagen__card-section {
+  width: 89%;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 30px;
+  filter: drop-shadow(11px 14px 10px rgba(250, 251, 252, 0.2));
+}
+.card .card-img-top {
+  filter: drop-shadow(11px 14px 10px rgba(250, 251, 252, 0.2));
+  animation: animatio-img-sillones 1.2s linear 0s 1 normal none;
+}
+.card .card-body {
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+  background: linear-gradient(160deg, rgba(145, 118, 130, 0.9416141457) 0%, rgba(227, 230, 211, 0.0620623249) 100%);
+}
+.card .card-body .card-title {
+  font-size: 30px;
+  font-family: monospace;
+  text-align: center;
+}
+.card .card-body .card-text {
+  font-size: 20px;
+}
 
 .titulo-contacto {
   font-size: 3em;
 }
 
-.form-contenido {
-  box-shadow: 0 0 20px 0 rgb(228, 65, 65, 0.2);
+.apellido {
+  color: red;
 }
 
+.form-contenido {
+  box-shadow: 0 0 20px 0 rgba(255, 253, 253, 0.5);
+  background: rgba(221, 236, 241, 0.658);
+}
 .form-contenido form {
-  background: rgb(116, 4, 4);
   margin: 0;
-  padding: 1em;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 30px;
@@ -91,29 +180,104 @@ body {
   border: none;
   background: none;
   outline: 0;
-  border-bottom: 1px solid rgb(211, 160, 160, 0.5);
+  border-bottom: 1px solid rgba(12, 11, 11, 0.651);
 }
 
 .form-contenido form button {
-  background: rgb(211, 160, 160);
+  background: linear-gradient(90deg, rgba(2, 1, 28, 0.6) 0%, rgba(17, 16, 16, 0.6) 16%, rgba(17, 67, 78, 0.6) 100%);
   border: 0;
   padding: 1em;
 }
 
 .form-contenido form .block {
-  grid-column: 1 / 3;
+  grid-column: 1/3;
 }
 
-/* -------------------------------------------------RESPONSIVE ADAPTABLE -----------------------------------------*/
+/* ANIMACIONES */
+@keyframes animation-carousel {
+  0% {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* ----------------------------------- ANIMACION LOGO PRINCIPAL -------------------------------- */
+@keyframes animation__logo-principal {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100px);
+  }
+}
+/* ----------------------------------- ANIMACION FOOTER  ---------------------------------------- */
+@keyframes animation__logo-footer {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+/* ----------------------------------- ANIMACION TITULOS DE PAGES   ---------------------------------------- */
+@keyframes titulo-pages {
+  0% {
+    letter-spacing: 1em;
+    filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    filter: blur(0);
+    opacity: 1;
+  }
+}
+/* -------------------------- ANIMACIONES PARA LAS IMAGENES DE PAGE SOFAS Y ESQINEROS   ------------------- */
+@keyframes animatio-img-sillones {
+  0% {
+    transform: scale(7);
+    animation-timing-function: ease-in;
+    opacity: 0;
+  }
+  35% {
+    transform: scale(1);
+    animation-timing-function: ease-out;
+    opacity: 1;
+  }
+  55% {
+    transform: scale(1.5);
+    animation-timing-function: ease-in;
+  }
+  70% {
+    transform: scale(1);
+    animation-timing-function: ease-out;
+  }
+  80% {
+    transform: scale(1.24);
+    animation-timing-function: ease-in;
+  }
+  90% {
+    transform: scale(1);
+    animation-timing-function: ease-out;
+  }
+  95% {
+    transform: scale(1.04);
+    animation-timing-function: ease-in;
+  }
+  100% {
+    transform: scale(1);
+    animation-timing-function: ease-out;
+  }
+}
 @media (max-width: 767px) {
   .imagen-principal {
     width: 100%;
   }
 }
-
 @media (min-width: 992px) {
   .texto-principal {
-    background: lightcoral;
     display: block;
     text-align: center;
     margin: 6rem;
@@ -122,12 +286,10 @@ body {
     font-weight: 400;
     letter-spacing: 5px;
   }
-
   .somos-fabricantes {
     display: flex;
     flex-wrap: nowrap;
   }
-
   .titulo__section-info {
     display: block;
     text-align: center;
@@ -137,16 +299,14 @@ body {
     font-weight: 400;
     letter-spacing: 10px;
   }
-
   .texto__section-info {
     font-size: 25px;
     text-align: justify;
     margin-top: 60;
     margin: 20px;
     padding: 25px 0px 0px 30px;
-    color: rgb(148, 118, 118);
+    color: rgb(255, 254, 254);
   }
-
   .nuestro-trabajo {
     display: flex;
     flex-wrap: nowrap;
@@ -157,44 +317,39 @@ body {
     display: flex;
     flex-direction: row;
   }
-
   .container-nosotros {
     display: flex;
     flex-direction: row;
   }
-
   .imagen-principal-ns {
     width: 50%;
   }
-
   .imagen-p-ns {
     width: 320%;
     height: 70%;
   }
-
   .texto-principal-ns {
     display: flex;
-
+    margin-top: 100px;
     margin: 20px;
-    font-size: 80px;
+    font-size: 50px;
     font-weight: 10px;
     letter-spacing: 2px;
-    color: rgb(148, 118, 118);
+    color: rgb(255, 255, 255);
   }
-
   .imagen-p-ns {
     width: 600px;
     margin: 10px;
   }
-
   .texto__parrafo-ns {
     font-size: 50%;
     margin: 10px;
   }
 }
-
 @media (max-width: 767px) {
   .imagen__section-info {
     width: 100%;
   }
 }
+
+/*# sourceMappingURL=style.css.map */

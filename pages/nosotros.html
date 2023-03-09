@@ -4,7 +4,15 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Nosotros</title>
+    <meta
+      name="description"
+      content="Compra tu sillon o sofa desde tu casa|Sillones fabricados a medida|Sillones cómodos y duraderos|Fabricación artesanal de sillones"
+    />
+    <meta
+      name="keywords"
+      content="Sillones, Muebles de sala, Sofas, Sillones de cuero, Diseño de interiores,Fabricante de muebles"
+    />
+    <title>Fabrica de Sillones | Sobre Nosotros</title>
     <!-- Bootstrap -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
@@ -12,14 +20,15 @@
       integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
       crossorigin="anonymous"
     />
+    <!-- ESTILOS CSS -->
+    <link rel="stylesheet" href="../CSS/style.css" />
     <!-- icon -->
     <link
       rel="shortcut icon"
       href="../Imagenes/Logos/Icon Png.png"
       type="image/x-icon"
     />
-    <!-- ESTILOS CSS -->
-    <link rel="stylesheet" href="../CSS/style.css" />
+
     <!-- FUENTES -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -31,9 +40,9 @@
   <body>
     <!-- AQUI COMIENZA EL HEADER -->
     <header>
-      <nav class="navbar navbar-expand-lg bg-with">
+      <nav class="navbar navbar-expand-lg bg-with fixed-top">
         <div class="container">
-          <a class="navbar-brand" href="#">
+          <a class="navbar-brand" href="/index.html">
             <img
               class="logo-principal__header"
               src="../Imagenes/Logos/Icon Png.png"
@@ -53,39 +62,27 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a
-                  class="nav-link active"
-                  aria-current="page"
-                  href="../index.html"
+                <a class="nav-link" aria-current="page" href="../index.html"
                   >INICIO</a
                 >
               </li>
               <li class="nav-item">
-                <a
-                  class="nav-link active"
-                  aria-current="page"
-                  href="nosotros.html"
+                <a class="nav-link" aria-current="page" href="nosotros.html"
                   >NOSOTROS</a
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="sofas.html"
+                <a class="nav-link" aria-current="page" href="sofas.html"
                   >SOFAS</a
                 >
               </li>
               <li class="nav-item">
-                <a
-                  class="nav-link active"
-                  aria-current="page"
-                  href="esquineros.html"
+                <a class="nav-link" aria-current="page" href="esquineros.html"
                   >ESQUINEROS</a
                 >
               </li>
               <li class="nav-item">
-                <a
-                  class="nav-link active"
-                  aria-current="page"
-                  href="contacto.html"
+                <a class="nav-link" aria-current="page" href="contacto.html"
                   >CONTACTO</a
                 >
               </li>
@@ -94,9 +91,14 @@
         </div>
       </nav>
     </header>
+
     <!------- ACA COMIENZA EL MAIN ------->
     <main>
-      <h1 class="titulo-nosotros text-center font-size-5">SOBRE NOSOTROS</h1>
+      <div class="div__titulo-principal-sn">
+        <h1 class="titulo-nosotros text-center fw-bold text-white">
+          SOBRE NOSOTROS
+        </h1>
+      </div>
       <section class="intro__section-ns">
         <div class="container-nosotros">
           <div class="imagen-principal-ns">
@@ -108,7 +110,7 @@
           </div>
 
           <div class="texto-principal-ns">
-            <h2 class="texto__parrafo-ns text-start fs-6 text">
+            <h2 class="texto__parrafo-ns text-start">
               Hace mas de 10 años creamos una empresa que le brinda una atención
               y asesoramiento personalizado en cuanto a medidas, modelos y
               opciones varias de nuestros productos, no solo puede visitarnos en
@@ -126,8 +128,9 @@
         </div>
       </section>
     </main>
+
     <!-- ACA COMIENZA EL FOOTER -->
-    <footer class="footer bg-success bg-gradient mt-10">
+    <footer class="footer bg-success mt-10">
       <div class="div__logo-footer text-center">
         <a href="../index.html">
           <img
@@ -178,6 +181,7 @@
         Diseño Deluxe 2023 © DesarolloWeb Blacklilo
       </h3>
     </footer>
+
     <!--bootstrap script -->
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"

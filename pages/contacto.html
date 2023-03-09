@@ -4,7 +4,15 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contacto</title>
+    <meta
+      name="description"
+      content="Compra tu sillon o sofa desde tu casa|Sillones fabricados a medida|Sillones cómodos y duraderos|Fabricación artesanal de sillones"
+    />
+    <meta
+      name="keywords"
+      content="Sillones, Muebles de sala, Sofas, Sillones de cuero, Diseño de interiores,Fabricante de muebles, Contacto, Telefono"
+    />
+    <title>Contacta | Sillones</title>
     <!-- Bootstrap -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
@@ -31,10 +39,11 @@
 
   <body>
     <!-- AQUI COMIENZA EL HEADER -->
+
     <header>
-      <nav class="navbar navbar-expand-lg bg-with">
+      <nav class="navbar navbar-expand-lg bg-with fixed-top">
         <div class="container">
-          <a class="navbar-brand" href="#">
+          <a class="navbar-brand" href="/index.html">
             <img
               class="logo-principal__header"
               src="../Imagenes/Logos/Icon Png.png"
@@ -54,39 +63,27 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a
-                  class="nav-link active"
-                  aria-current="page"
-                  href="../index.html"
+                <a class="nav-link" aria-current="page" href="../index.html"
                   >INICIO</a
                 >
               </li>
               <li class="nav-item">
-                <a
-                  class="nav-link active"
-                  aria-current="page"
-                  href="nosotros.html"
+                <a class="nav-link" aria-current="page" href="nosotros.html"
                   >NOSOTROS</a
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="sofas.html"
+                <a class="nav-link" aria-current="page" href="sofas.html"
                   >SOFAS</a
                 >
               </li>
               <li class="nav-item">
-                <a
-                  class="nav-link active"
-                  aria-current="page"
-                  href="esquineros.html"
+                <a class="nav-link" aria-current="page" href="esquineros.html"
                   >ESQUINEROS</a
                 >
               </li>
               <li class="nav-item">
-                <a
-                  class="nav-link active"
-                  aria-current="page"
-                  href="contacto.html"
+                <a class="nav-link" aria-current="page" href="contacto.html"
                   >CONTACTO</a
                 >
               </li>
@@ -95,11 +92,13 @@
         </div>
       </nav>
     </header>
+
     <!-- AQUI COMIENZA EL MAIN -->
+
     <main>
-      <h1 class="titulo-nosotros text-center font-size-5 p-2">
-        DEJANOS UN MENSAJE
-      </h1>
+      <div class="div__titulo-sofas text-center fw-bold text-white">
+        <h1 class="titulo-sofas fw-bold text-center">DEJANOS UN MENSAJE</h1>
+      </div>
       <div class="container">
         <div class="form-contenido container">
           <h2 class="titulo-contacto text-center">CONTACTO</h2>
@@ -108,34 +107,34 @@
               class="name"
               type="text"
               name="Nombre"
-              placeholder="Nombre:"
+              placeholder="Nombre :"
             />
             <input
               class="apelldio"
               type="text"
-              name="apellido"
-              placeholder="Apellido:"
+              name="apellido "
+              placeholder="Apellido :"
             />
 
             <input
               class="correo"
               type="text"
               name="Correo"
-              placeholder="Correo:"
+              placeholder="Correo :"
             />
 
             <input
               class="telefono"
               type="text"
               name="Telefono"
-              placeholder="Telefono:"
+              placeholder="Telefono :"
             />
             <div class="block">
               <textarea
                 class="text-area"
                 name="mensaje"
                 rows="10"
-                placeholder="Deje aqui su mensaje:"
+                placeholder="Deje aqui su mensaje :"
               ></textarea>
             </div>
 
@@ -148,8 +147,10 @@
         </div>
       </div>
     </main>
+
     <!-- ACA COMIENZA EL FOOTER -->
-    <footer class="footer bg-success bg-gradient mt-10">
+
+    <footer class="footer mt-10">
       <div class="div__logo-footer text-center">
         <a href="../index.html">
           <img

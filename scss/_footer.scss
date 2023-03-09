@@ -1,0 +1,31 @@
+.footer {
+  margin-top: 20px;
+  background: rgb(145, 118, 130);
+  background: linear-gradient(
+    160deg,
+    rgba(145, 118, 130, 0.9416141456582633) 0%,
+    rgba(227, 230, 211, 1) 100%
+  );
+
+  .logo-footer {
+    margin: 20px 20px;
+  }
+
+  .footer__logos-redes {
+    &:hover {
+      animation: animation__logo-footer 1s ease-out 1s 2 normal none;
+    }
+  }
+
+  .footer__logos-redes-iconos {
+    text-decoration: none;
+    padding: 5px;
+  }
+
+  .copyright__texto {
+    margin-top: 30px;
+    font-size: 15px;
+    font-weight: 10px;
+    letter-spacing: 5px;
+  }
+}

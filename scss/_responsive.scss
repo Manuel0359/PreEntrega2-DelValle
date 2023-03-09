@@ -1,0 +1,93 @@
+@media (max-width: 767px) {
+  .imagen-principal {
+    width: 100%;
+  }
+}
+
+@media (min-width: 992px) {
+  .texto-principal {
+    display: block;
+    text-align: center;
+    margin: 6rem;
+    padding: 5%;
+    font-size: 35px;
+    font-weight: 400;
+    letter-spacing: 5px;
+  }
+
+  .somos-fabricantes {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+
+  .titulo__section-info {
+    display: block;
+    text-align: center;
+    margin: 1rem;
+    padding: 5%;
+    font-size: 40px;
+    font-weight: 400;
+    letter-spacing: 10px;
+  }
+
+  .texto__section-info {
+    font-size: 25px;
+    text-align: justify;
+    margin-top: 60;
+    margin: 20px;
+    padding: 25px 0px 0px 30px;
+    color: rgb(255, 254, 254);
+  }
+
+  .nuestro-trabajo {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row-reverse;
+  }
+
+  /*  PAGE NOSOTROS */
+  .intro_section-ns {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .container-nosotros {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .imagen-principal-ns {
+    width: 50%;
+  }
+
+  .imagen-p-ns {
+    width: 320%;
+    height: 70%;
+  }
+
+  .texto-principal-ns {
+    display: flex;
+    margin-top: 100px;
+    margin: 20px;
+    font-size: 50px;
+    font-weight: 10px;
+    letter-spacing: 2px;
+    color: rgb(255, 255, 255);
+  }
+
+  .imagen-p-ns {
+    width: 600px;
+    margin: 10px;
+  }
+
+  .texto__parrafo-ns {
+    font-size: 50%;
+    margin: 10px;
+  }
+}
+
+@media (max-width: 767px) {
+  .imagen__section-info {
+    width: 100%;
+  }
+}
