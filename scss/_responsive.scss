@@ -1,3 +1,9 @@
+/* @media (max-width: 991px) {
+  nav {
+    height: 50px;
+  }
+} */
+
 @media (max-width: 548px) {
   .div__carousel {
     margin-top: 106px;
@@ -95,5 +101,16 @@
 @media (max-width: 767px) {
   .imagen__section-info {
     width: 100%;
+  }
+}
+
+/* FOOTER */
+@media (min-width: 767px) {
+  footer {
+    .footer__contenido {
+      width: 100%;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 30px;
+    }
   }
 }

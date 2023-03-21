@@ -1,28 +1,58 @@
-.footer {
-  margin-top: 20px;
-  background: rgb(145, 118, 130);
-  background: linear-gradient(
-    160deg,
-    rgba(145, 118, 130, 0.9416141456582633) 0%,
-    rgba(227, 230, 211, 1) 100%
-  );
+footer {
+  width: 100%;
+  background: rgb(44, 42, 42);
+  margin-top: 50px;
 
-  .logo-footer {
-    margin: 20px 20px;
-  }
+  .footer__contenido {
+    width: 100%;
 
-  .footer__logos-redes {
-    &:hover {
-      animation: animation__logo-footer 1s ease-out 1s 2 normal none;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 15px;
+    padding: 45px 0;
+
+    p {
+      margin: 5px;
+    }
+
+    h4 {
+      color: rgb(187, 185, 83);
+      font-size: 25px;
+    }
+
+    a {
+      color: rgb(243, 248, 248);
+      font-size: 20px;
+      display: inline-block;
+      text-decoration: none;
+      &:hover {
+        color: rgb(252, 248, 8);
+      }
+    }
+
+    .iconos__footer {
+      font-size: 40px;
+      margin: 10px;
+      animation: swirl-out-zoomout 2.2s ease-in 2s 1 normal none;
+      &:hover {
+        color: aqua;
+      }
+    }
+
+    .logo__foter {
+      img {
+        width: 200px;
+        margin: auto;
+      }
+      p {
+        color: aliceblue;
+      }
     }
   }
-
-  .footer__logos-redes-iconos {
-    text-decoration: none;
-    padding: 5px;
-  }
-
   .copyright__texto {
+    margin-top: 30px;
+
     margin-top: 30px;
     font-size: 15px;
     font-weight: 10px;

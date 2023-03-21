@@ -12,13 +12,16 @@ nav {
 
   .logo-principal__header {
     width: 80px;
-    animation: animation__logo-principal 2s ease-out 1s 2 normal none;
+    animation: logo-navbar 2s linear 0s 1 normal none;
   }
 
   li {
     font-size: large;
+    a:active {
+      color: red;
+    }
     .nav-link {
-      color: white;
+      color: rgb(97, 27, 27);
       letter-spacing: 5px;
     }
   }
@@ -28,6 +31,7 @@ nav {
 
 .div__carousel-text {
   animation: animation-carousel 2s ease 0s 1 normal none;
+  background: rgb(253, 251, 251, 0.75);
   h5 {
     font-size: 40px;
     color: rgb(17, 17, 17);
@@ -40,7 +44,7 @@ nav {
   }
 
   &:hover {
-    background: rgb(253, 251, 251, 0.75);
+    background: rgba(247, 194, 194, 0.75);
   }
 }
 /* -------------------------------------------- ESTILOS DEL MAIN ------------------------------ */
@@ -76,4 +80,74 @@ nav {
 }
 .imagen__section-info {
   margin: 20px 0 20px 0;
+}
+
+/* -------------------------------------------- ESTILOS SECCION TESTIMONIOS ------------------------------ */
+
+.section__testimonios {
+  h3 {
+    background: $gradiend-segundario;
+    margin-bottom: 20px;
+    padding: 10px;
+    font-size: 40px;
+    font-weight: 10px;
+    letter-spacing: 10px;
+    animation: titulo-pages 1s linear 0s 1 normal none;
+    color: white;
+  }
+
+  .carousel-indicators {
+    left: 0;
+    top: auto;
+    bottom: -60px;
+  }
+
+  .card__testimonios {
+    background: rgba(228, 166, 166, 0.541);
+    margin: 0 20px;
+    padding: 0 10px;
+    border: radius 80px;
+    border: 0;
+
+    .testimonios-img {
+      max-width: 150px;
+      border-radius: 60%;
+      margin: 15px auto 0;
+      box-shadow: 0 8px 20px 0.4px rgb(20, 19, 19);
+      width: 120px;
+      height: 120px;
+    }
+
+    .card-body__testimonios {
+      background: rgba(228, 166, 166, 0.541);
+      h5 {
+        color: rgb(36, 4, 4);
+        font-weight: bold;
+      }
+    }
+  }
+
+  .boton__testimonios {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    a {
+      text-decoration: none;
+      .boton__testimonios {
+        background: $gradiend-segundario;
+        border: 0;
+        padding: 1em;
+        font-weight: bold;
+        color: white;
+        text-decoration: none;
+        &:focus {
+          color: rgb(121, 31, 31);
+        }
+        &:hover {
+          color: rgb(121, 31, 31);
+          background: rgb(241, 126, 184);
+        }
+      }
+    }
+  }
 }

@@ -18,19 +18,23 @@ nav {
 }
 nav .logo-principal__header {
   width: 80px;
-  animation: animation__logo-principal 2s ease-out 1s 2 normal none;
+  animation: logo-navbar 2s linear 0s 1 normal none;
 }
 nav li {
   font-size: large;
 }
+nav li a:active {
+  color: red;
+}
 nav li .nav-link {
-  color: white;
+  color: rgb(97, 27, 27);
   letter-spacing: 5px;
 }
 
 /* --------------------------------------------- ESTILOS PARA EL CAROUSEL ------------------------------*/
 .div__carousel-text {
   animation: animation-carousel 2s ease 0s 1 normal none;
+  background: rgba(253, 251, 251, 0.75);
 }
 .div__carousel-text h5 {
   font-size: 40px;
@@ -42,7 +46,7 @@ nav li .nav-link {
   font-size: 25px;
 }
 .div__carousel-text:hover {
-  background: rgba(253, 251, 251, 0.75);
+  background: rgba(247, 194, 194, 0.75);
 }
 
 /* -------------------------------------------- ESTILOS DEL MAIN ------------------------------ */
@@ -67,22 +71,114 @@ nav li .nav-link {
   margin: 20px 0 20px 0;
 }
 
-.footer {
-  margin-top: 20px;
-  background: rgb(145, 118, 130);
-  background: linear-gradient(160deg, rgba(145, 118, 130, 0.9416141457) 0%, rgb(227, 230, 211) 100%);
+/* -------------------------------------------- ESTILOS SECCION TESTIMONIOS ------------------------------ */
+.section__testimonios h3 {
+  background: linear-gradient(90deg, rgba(2, 1, 28, 0.6) 0%, rgba(17, 16, 16, 0.6) 16%, rgba(17, 67, 78, 0.6) 100%);
+  margin-bottom: 20px;
+  padding: 10px;
+  font-size: 40px;
+  font-weight: 10px;
+  letter-spacing: 10px;
+  animation: titulo-pages 1s linear 0s 1 normal none;
+  color: white;
 }
-.footer .logo-footer {
-  margin: 20px 20px;
+.section__testimonios .carousel-indicators {
+  left: 0;
+  top: auto;
+  bottom: -60px;
 }
-.footer .footer__logos-redes:hover {
-  animation: animation__logo-footer 1s ease-out 1s 2 normal none;
+.section__testimonios .card__testimonios {
+  background: rgba(228, 166, 166, 0.541);
+  margin: 0 20px;
+  padding: 0 10px;
+  border: radius 80px;
+  border: 0;
 }
-.footer .footer__logos-redes-iconos {
+.section__testimonios .card__testimonios .testimonios-img {
+  max-width: 150px;
+  border-radius: 60%;
+  margin: 15px auto 0;
+  box-shadow: 0 8px 20px 0.4px rgb(20, 19, 19);
+  width: 120px;
+  height: 120px;
+}
+.section__testimonios .card__testimonios .card-body__testimonios {
+  background: rgba(228, 166, 166, 0.541);
+}
+.section__testimonios .card__testimonios .card-body__testimonios h5 {
+  color: rgb(36, 4, 4);
+  font-weight: bold;
+}
+.section__testimonios .boton__testimonios {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+.section__testimonios .boton__testimonios a {
   text-decoration: none;
-  padding: 5px;
 }
-.footer .copyright__texto {
+.section__testimonios .boton__testimonios a .boton__testimonios {
+  background: linear-gradient(90deg, rgba(2, 1, 28, 0.6) 0%, rgba(17, 16, 16, 0.6) 16%, rgba(17, 67, 78, 0.6) 100%);
+  border: 0;
+  padding: 1em;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+}
+.section__testimonios .boton__testimonios a .boton__testimonios:focus {
+  color: rgb(121, 31, 31);
+}
+.section__testimonios .boton__testimonios a .boton__testimonios:hover {
+  color: rgb(121, 31, 31);
+  background: rgb(241, 126, 184);
+}
+
+footer {
+  width: 100%;
+  background: rgb(44, 42, 42);
+  margin-top: 50px;
+}
+footer .footer__contenido {
+  width: 100%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 15px;
+  padding: 45px 0;
+}
+footer .footer__contenido p {
+  margin: 5px;
+}
+footer .footer__contenido h4 {
+  color: rgb(187, 185, 83);
+  font-size: 25px;
+}
+footer .footer__contenido a {
+  color: rgb(243, 248, 248);
+  font-size: 20px;
+  display: inline-block;
+  text-decoration: none;
+}
+footer .footer__contenido a:hover {
+  color: rgb(252, 248, 8);
+}
+footer .footer__contenido .iconos__footer {
+  font-size: 40px;
+  margin: 10px;
+  animation: swirl-out-zoomout 2.2s ease-in 2s 1 normal none;
+}
+footer .footer__contenido .iconos__footer:hover {
+  color: aqua;
+}
+footer .footer__contenido .logo__foter img {
+  width: 200px;
+  margin: auto;
+}
+footer .footer__contenido .logo__foter p {
+  color: aliceblue;
+}
+footer .copyright__texto {
+  margin-top: 30px;
   margin-top: 30px;
   font-size: 15px;
   font-weight: 10px;
@@ -205,12 +301,12 @@ nav li .nav-link {
   }
 }
 /* ----------------------------------- ANIMACION LOGO PRINCIPAL -------------------------------- */
-@keyframes animation__logo-principal {
+@keyframes logo-navbar {
   0% {
-    transform: translateX(0);
+    transform: scale(0.2);
   }
   100% {
-    transform: translateX(-100px);
+    transform: scale(1);
   }
 }
 /* ----------------------------------- ANIMACION FOOTER  ---------------------------------------- */
@@ -271,6 +367,22 @@ nav li .nav-link {
     animation-timing-function: ease-out;
   }
 }
+/* -------------------------- ANIMACIONES PARA ICONOS DEL FOOTER   ------------------- */
+@keyframes swirl-out-zoomout {
+  0% {
+    transform: rotate(540deg) scale(5);
+    opacity: 1;
+  }
+  100% {
+    transform: rotate(0) scale(1);
+    opacity: 0;
+  }
+}
+/* @media (max-width: 991px) {
+  nav {
+    height: 50px;
+  }
+} */
 @media (max-width: 548px) {
   .div__carousel {
     margin-top: 106px;
@@ -354,6 +466,14 @@ nav li .nav-link {
 @media (max-width: 767px) {
   .imagen__section-info {
     width: 100%;
+  }
+}
+/* FOOTER */
+@media (min-width: 767px) {
+  footer .footer__contenido {
+    width: 100%;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
   }
 }
 

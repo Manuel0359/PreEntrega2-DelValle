@@ -4,13 +4,15 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- DESCRIPCION -->
     <meta
       name="description"
       content="Compra tu sillon o sofa desde tu casa|Sillones fabricados a medida|Sillones cómodos y duraderos|Fabricación artesanal de sillones"
     />
+    <!-- PALABRAS CLAVES -->
     <meta
       name="keywords"
-      content="Sillones, Muebles de sala, Sofas, Sillones de cuero, Diseño de interiores,Fabricante de muebles, Contacto, Telefono"
+      content="Sillones,Muebles de sala,Sofas,Sillones de cuero,Diseño de interiores,Fabricante de muebles,Contacto,Telefono"
     />
     <title>Contacta | Sillones</title>
     <!-- Bootstrap -->
@@ -35,55 +37,76 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,800;1,600&family=Roboto:wght@300;400;700;900&display=swap"
       rel="stylesheet"
     />
+    <!-- ICONOS -->
+    <script
+      src="https://kit.fontawesome.com/f18836aa77.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
-
   <body>
     <!-- AQUI COMIENZA EL HEADER -->
-
     <header>
-      <nav class="navbar navbar-expand-lg bg-with fixed-top">
+      <nav class="navbar navbar-expand-lg navbar-dark menu shadow fixed-top">
         <div class="container">
-          <a class="navbar-brand" href="../index.html">
-            <img
+          <a class="navbar-brand" href="/"
+            ><img
               class="logo-principal__header"
-              src="../Imagenes/Logos/Icon Png.png"
-              alt="esto-es-un-logo"
+              src="../Imagenes/Logos/Icon-Png.png"
+              alt="logo-de-la-empresa"
           /></a>
           <button
             class="navbar-toggler"
             type="button"
             data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="navbarNav"
+          >
+            <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="../index.html"
+                <a
+                  class="nav-link fw-bold"
+                  aria-current="page"
+                  href="../index.html"
                   >INICIO</a
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="nosotros.html"
+                <a
+                  class="nav-link fw-bold"
+                  aria-current="page"
+                  href="nosotros.html"
                   >NOSOTROS</a
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="sofas.html"
+                <a
+                  class="nav-link fw-bold"
+                  aria-current="page"
+                  href="sofas.html"
                   >SOFAS</a
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="esquineros.html"
+                <a
+                  class="nav-link fw-bold"
+                  aria-current="page"
+                  href="esquineros.html"
                   >ESQUINEROS</a
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="contacto.html"
+                <a
+                  class="nav-link active fw-bold"
+                  aria-current="page"
+                  href="contacto.html"
                   >CONTACTO</a
                 >
               </li>
@@ -92,9 +115,7 @@
         </div>
       </nav>
     </header>
-
     <!-- AQUI COMIENZA EL MAIN -->
-
     <main>
       <div class="div__titulo-sofas text-center fw-bold text-white">
         <h1 class="titulo-sofas fw-bold text-center">DEJANOS UN MENSAJE</h1>
@@ -115,14 +136,12 @@
               name="apellido "
               placeholder="Apellido :"
             />
-
             <input
               class="correo"
               type="text"
               name="Correo"
               placeholder="Correo :"
             />
-
             <input
               class="telefono"
               type="text"
@@ -137,7 +156,6 @@
                 placeholder="Deje aqui su mensaje :"
               ></textarea>
             </div>
-
             <div class="block">
               <p class="boton-enviar">
                 <button>ENVIAR</button>
@@ -147,62 +165,64 @@
         </div>
       </div>
     </main>
-
     <!-- ACA COMIENZA EL FOOTER -->
-
-    <footer class="footer mt-10">
-      <div class="div__logo-footer text-center">
-        <a href="../index.html">
-          <img
-            class="logo-footer"
-            src="../Imagenes/Logos/icon.png"
-            alt="logo-de-la-empresa"
-          />
-        </a>
-      </div>
-      <div class="footer__logos-redes">
-        <div class="seguinos-redes">
-          <h2 class="texto__seguinos-redes text-center">SEGUINOS</h2>
+    <footer>
+      <div class="footer__contenido text-center">
+        <div class="logo__foter box__footer">
+          <a href="../index.html">
+            <img src="/Imagenes/logo-png-blanco.png" alt="esto-es-un-logo" />
+          </a>
+          <p>
+            Somos una fabica de sillones y sofas con mas de 10 años de
+            experiencia en servicio y entrega.
+          </p>
         </div>
-        <div class="footer__logos-redes text-center">
+        <div class="navegacion__footer box__footer d-flex flex-column">
+          <h4>NAVEGACION</h4>
+          <a href="../index.html" class="link__navegacion-footer">Inicio</a>
+          <a href="/pages/nosotros.html" class="link__navegacion-footer"
+            >Nosotros</a
+          >
+          <a href="/pages/sofas.html" class="link__navegacion-footer">Sofas</a>
+          <a href="/pages/esquineros.html" class="link__navegacion-footer"
+            >Esquineros</a
+          >
+          <a href="/pages/contacto.html" class="link__navegacion-footer"
+            >Contacto</a
+          >
+        </div>
+        <div class="redes__footer box__footer text-center">
+          <h4>SEGUINOS EN REDES</h4>
           <a
             href="https://www.facebook.com/disedeluxe/"
-            class="footer__logo-facebook"
-          >
-            <img
-              class="footer__logos-redes-iconos"
-              src="../Imagenes/facebook.png"
-              alt="logo-facebook"
-            />
-          </a>
+            target="_blank"
+            class="iconos__footer fa-brands fa-facebook"
+          ></a>
           <a
             href="https://www.instagram.com/designdeluxe.ok/"
-            class="footer__logo-instagram"
-          >
-            <img
-              class="footer__logos-redes-iconos"
-              src="../Imagenes/instagram.png"
-              alt="logo-instagram"
-            />
-          </a>
-          <a
-            href="https://www.instagram.com/designdeluxe.ok/"
-            class="footer__logo-whatsapp"
-          >
-            <img
-              class="footer__logos-redes-iconos"
-              src="../Imagenes/whatsapp.png"
-              alt="logo-instagram"
-            />
-          </a>
+            target="_blank"
+            class="iconos__footer fa-brands fa-instagram"
+          ></a>
+          <div class="contactanos__fotter box__footer mt-3">
+            <h4>CONTACTANOS</h4>
+            <a
+              href="https://wa.me/message/H5T34U5MVD7YI1"
+              class="iconos__footer fa-brands fa-whatsapp"
+              target="_blank"
+            ></a>
+            <a
+              href="mailto:sillones.designdeluxe@gmail.com"
+              class="iconos__footer fa-regular fa-envelope"
+              target="_blank"
+            ></a>
+          </div>
         </div>
       </div>
       <h3 class="copyright__texto text-center bg-info-subtle">
         Diseño Deluxe 2023 © DesarolloWeb Blacklilo
       </h3>
     </footer>
-
-    <!--bootstrap script -->
+    <!--    BOOTSTRAP SCRIPT -->
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
       integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
@@ -211,11 +231,6 @@
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
       integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
       crossorigin="anonymous"
     ></script>
   </body>
