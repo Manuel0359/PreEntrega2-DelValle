@@ -1,9 +1,3 @@
-/* @media (max-width: 991px) {
-  nav {
-    height: 50px;
-  }
-} */
-
 @media (max-width: 548px) {
   .div__carousel {
     margin-top: 106px;
@@ -13,6 +7,22 @@
 @media (max-width: 767px) {
   .imagen-principal {
     width: 100%;
+  }
+}
+@media (max-width: 992px) {
+  .container {
+    .titulo__section-info {
+      padding: auto;
+      font-size: 20px;
+      letter-spacing: 5px;
+    }
+  }
+
+  .section__testimonios {
+    .titulo__testimonios {
+      font-size: 20px;
+      letter-spacing: 5px;
+    }
   }
 }
 
@@ -36,7 +46,7 @@
     display: block;
     text-align: center;
     margin: 1rem;
-    padding: 5%;
+    padding: 10px;
     font-size: 40px;
     font-weight: 400;
     letter-spacing: 10px;
@@ -45,7 +55,6 @@
   .texto__section-info {
     font-size: 25px;
     text-align: justify;
-    margin-top: 60;
     margin: 20px;
     padding: 25px 0px 0px 30px;
     color: rgb(255, 254, 254);

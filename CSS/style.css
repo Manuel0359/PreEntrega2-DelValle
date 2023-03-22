@@ -63,8 +63,15 @@ nav li .nav-link {
   background: rgb(145, 118, 130);
   background: linear-gradient(160deg, rgb(145, 118, 130) 0%, rgb(224, 211, 230) 100%);
 }
-.section-info .section-info h2 {
+.section-info .titulo__section-info {
+  background: linear-gradient(90deg, rgba(2, 1, 28, 0.6) 0%, rgba(17, 16, 16, 0.6) 16%, rgba(17, 67, 78, 0.6) 100%);
   color: white;
+  margin-bottom: 20px;
+  padding: 10px;
+  font-size: 40px;
+  font-weight: 10px;
+  letter-spacing: 10px;
+  animation: titulo-pages 1s linear 0s 1 normal none;
 }
 
 .imagen__section-info {
@@ -378,11 +385,6 @@ footer .copyright__texto {
     opacity: 0;
   }
 }
-/* @media (max-width: 991px) {
-  nav {
-    height: 50px;
-  }
-} */
 @media (max-width: 548px) {
   .div__carousel {
     margin-top: 106px;
@@ -391,6 +393,17 @@ footer .copyright__texto {
 @media (max-width: 767px) {
   .imagen-principal {
     width: 100%;
+  }
+}
+@media (max-width: 992px) {
+  .container .titulo__section-info {
+    padding: auto;
+    font-size: 20px;
+    letter-spacing: 5px;
+  }
+  .section__testimonios .titulo__testimonios {
+    font-size: 20px;
+    letter-spacing: 5px;
   }
 }
 @media (min-width: 992px) {
@@ -411,7 +424,7 @@ footer .copyright__texto {
     display: block;
     text-align: center;
     margin: 1rem;
-    padding: 5%;
+    padding: 10px;
     font-size: 40px;
     font-weight: 400;
     letter-spacing: 10px;
@@ -419,7 +432,6 @@ footer .copyright__texto {
   .texto__section-info {
     font-size: 25px;
     text-align: justify;
-    margin-top: 60;
     margin: 20px;
     padding: 25px 0px 0px 30px;
     color: rgb(255, 254, 254);

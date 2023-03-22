@@ -72,10 +72,15 @@ nav {
     rgba(224, 211, 230, 1) 100%
   );
 
-  .section-info {
-    h2 {
-      color: white;
-    }
+  .titulo__section-info {
+    background: $gradiend-segundario;
+    color: white;
+    margin-bottom: 20px;
+    padding: 10px;
+    font-size: 40px;
+    font-weight: 10px;
+    letter-spacing: 10px;
+    animation: titulo-pages 1s linear 0s 1 normal none;
   }
 }
 .imagen__section-info {
