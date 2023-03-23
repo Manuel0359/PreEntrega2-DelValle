@@ -295,6 +295,45 @@ footer .copyright__texto {
   grid-column: 1/3;
 }
 
+.seccion__error-404 {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+.seccion__error-404 .div__error-contenido {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.seccion__error-404 .div__error-contenido h1 {
+  font-size: 80px;
+  margin-top: 15px;
+}
+.seccion__error-404 .div__error-contenido p {
+  font-size: 30px;
+}
+.seccion__error-404 .div__error-contenido i {
+  font-size: 50px;
+  margin: 10px;
+}
+.seccion__error-404 .div__error-contenido a {
+  margin-top: 30px;
+  background: lightblue;
+  border-radius: 30px;
+}
+.seccion__error-404 .div__error-contenido a:hover {
+  background: linear-gradient(90deg, rgba(2, 1, 28, 0.6) 0%, rgba(17, 16, 16, 0.6) 16%, rgba(17, 67, 78, 0.6) 100%);
+}
+.seccion__error-404 .div__img-error img {
+  display: flex;
+  width: 250px;
+  padding: 15px;
+  margin-left: 50px;
+  margin-top: 20px;
+  align-items: center;
+}
+
 /* ANIMACIONES */
 @keyframes animation-carousel {
   0% {

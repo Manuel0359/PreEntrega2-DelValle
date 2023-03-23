@@ -1,0 +1,43 @@
+.seccion__error-404 {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+
+  .div__error-contenido {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    h1 {
+      font-size: 80px;
+      margin-top: 15px;
+    }
+
+    p {
+      font-size: 30px;
+    }
+    i {
+      font-size: 50px;
+      margin: 10px;
+    }
+    a {
+      margin-top: 30px;
+      background: lightblue;
+      border-radius: 30px;
+      &:hover {
+        background: $gradiend-segundario;
+      }
+    }
+  }
+  .div__img-error {
+    img {
+      display: flex;
+      width: 250px;
+      padding: 15px;
+      margin-left: 50px;
+      margin-top: 20px;
+      align-items: center;
+    }
+  }
+}
